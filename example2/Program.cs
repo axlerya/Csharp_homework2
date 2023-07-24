@@ -14,14 +14,12 @@
 
 Console.WriteLine("Введите число");
 int numberInput = Convert.ToInt32(Console.ReadLine());
-int[] arrayNumbers = GetIntArray(numberInput);
-
-if (numberInput%100 > 0)
+if (numberInput/100 < 1)
 {
-    Console.WriteLine($"Третья цифра числа = {arrayNumbers[2]}");
+    Console.WriteLine("Третьей цифры числа нет");
 }
-
-else 
+else
 {
-    Console.WriteLine("Третьей цифры нет");
+    int[] arrayNumbers = GetIntArray(numberInput);
+    Console.WriteLine($"Третья цифра числа = {arrayNumbers[2]}");
 }

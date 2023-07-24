@@ -13,6 +13,6 @@
     }
 }
 
-﻿Console.WriteLine("Введите первое число");
+Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 Number(number);
